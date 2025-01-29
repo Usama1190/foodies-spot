@@ -8,14 +8,15 @@
     max-width: 968px;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
 }
 
 .ftcnwp {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 155px;
+    width: 17%;
 }
 
 .ftcnwp h2 {
@@ -24,6 +25,16 @@
     color: var(--text-color-l);
 }
 
+.ftcnwp p {
+    font-size: 13px;
+}
+
 .ftlan {
     color: var(--text-color-l);
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+.ftics {
+    margin: 0 12px;
 }

@@ -1,7 +1,7 @@
 const footerData = [
     {
         title: 'Delivery',
-        description: ['Order Products Faster', 'Easier']
+        description: ['Order Products Faster Easier']
     },
     {
         title: 'Our Services',
@@ -16,9 +16,7 @@ const footerData = [
         links: ['Support', 'Questions', 'Customer Help'],
     },
     {
-        icon1: '',
-        icon2: '',
-        icon3: '',
+        icons: ['fb', 'twi', 'insta']
     }
 ]
 

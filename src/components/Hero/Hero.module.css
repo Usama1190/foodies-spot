@@ -1,5 +1,5 @@
 .hrwp {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     padding: 96px 0 32px;
 }
@@ -10,13 +10,12 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    /* align-items: center; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .hrcwp {
     width: 49%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,5 +41,5 @@
 
 .hriwp img {
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }

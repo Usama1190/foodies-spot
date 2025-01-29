@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.ftwp}>
       <div className={styles.ftiwp}>
         {footerData.map((item, index) => {
-          const { title, description, links } = item;
+          const { title, description, links, icons } = item;
           return (
             <div key={index} className={styles.ftcnwp}>
               <h2>{ title }</h2>
@@ -17,7 +17,8 @@ const Footer = () => {
                   )
                 })
               }
-              <ul>
+              {
+                links && <ul>
                 {
                   links?.map((item, index) => {
                     return (
@@ -28,6 +29,14 @@ const Footer = () => {
                   })
                 }
               </ul>
+              }
+              {
+                icons?.map((item, index) => {
+                  return (
+                    <span key={index} className={styles.ftics}>{item}</span>
+                  )
+                })
+              }
             </div>
           );
         })}
