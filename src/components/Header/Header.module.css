@@ -1,0 +1,25 @@
+.hdwp {
+    width: 100%;
+    color: var(--text-color-l);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav.navhd {
+    max-width: 968px;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.hdlk ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 627px;
+}
+
+.hdlk ul li {}

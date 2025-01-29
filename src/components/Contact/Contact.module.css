@@ -1,0 +1,30 @@
+.cnwp {
+    border: 1px solid red;
+    padding: 96px 0 32px;
+}
+
+.cncnwp {
+    max-width: 968px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 48px;
+}
+
+.cncnwp ul {
+    list-style: none;
+}
+
+.cnhdes {
+    width: 50%;
+}
+
+.cnt {
+    font-size: 20px;
+    margin: 0 0 16px;
+}
+
+.cndes {
+    color: var(--text-color-l);
+}

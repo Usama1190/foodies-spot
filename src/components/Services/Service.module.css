@@ -1,0 +1,19 @@
+.swp {
+    max-width: 968px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    padding: 96px 0 32px;
+    color: var(--text-color-l);
+}
+
+.swph {
+    margin: 0 0 24px;
+    font-size: 20px;
+}
+
+.scwp {
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+}

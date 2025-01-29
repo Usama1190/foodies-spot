@@ -1,4 +1,34 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+
 :root {
+  --primary-color: #F5C83D;
+  --secondary-color: #FAE39E;
+  --text-color-d: #1A1A1A;
+  --text-color-l: #282725;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--text-color-l);
+}
+
+
+
+
+
+
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +95,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

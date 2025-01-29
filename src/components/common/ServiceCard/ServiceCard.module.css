@@ -1,0 +1,27 @@
+.scwp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 21rem;
+    padding: 32px 24px;
+    width: 32%;
+    border: 1px solid #EFDDD9;
+    border-radius: 1rem;
+}
+
+.sct {
+    margin: 0 0 16px;
+}
+
+.scig {
+    width: 135px;
+    height: 104px;
+    margin: 0 0 20px;
+}
+
+.scdes {
+    margin: 0 0 24px;
+    font-size: 15px;
+    color: var(--text-color-l);
+}

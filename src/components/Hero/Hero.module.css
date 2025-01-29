@@ -1,0 +1,46 @@
+.hrwp {
+    border: 1px solid black;
+    width: 100%;
+    padding: 96px 0 32px;
+}
+
+.hrciwp {
+    max-width: 968px;
+    padding: 96px 0 32px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* align-items: center; */
+    border: 1px solid red;
+}
+
+.hrcwp {
+    width: 49%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hrt {
+    font-size: 32px;
+    margin: 0 0 12px;
+    width: 85%;
+    color: var(--text-color-d);
+}
+
+.hrdc {
+    width: 75%;
+    color: var(--text-color-l);
+    margin: 0 0 32px;
+    font-size: 15px;
+}
+
+.hriwp {
+    width: 49%;
+}
+
+.hriwp img {
+    width: 100%;
+    border: 1px solid red;
+}
