@@ -37,4 +37,7 @@
 
 .ftics {
     margin: 0 12px;
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
 }

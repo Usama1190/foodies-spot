@@ -2,8 +2,8 @@ const heroData = [
     {
         title: 'Order Products Faster Easier',
         description: 'Order your favorite foods at any time and we will deliver them right to where you are.',
-        btnText: 'Get Started',
-        btnLink: '/',
+        btnText: ['Get Started'],
+        btnLink: ['/'],
         imgUrl: './assets/imgs/bannerImage.svg',
         imgAlt: 'food delivery rider image'
     },
@@ -11,7 +11,8 @@ const heroData = [
         title: 'Find Out A Little More About Us',
         description: 'We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of delivery.',
         imgUrl: './assets/imgs/bannerImage2.svg',
-        imgAlt: 'delivery boy on the door'
+        imgAlt: 'delivery boy on the door',
+        isrotate: true
     },
     {
         title: 'Your Safety Is Important',
@@ -22,10 +23,12 @@ const heroData = [
     {
         title: 'Watch Your Delivery At Any Time',
         description: 'With our app you can view the route of your order, from our local headquarters to the place where you are. Look for the app now!',
-        btnText: '',
-        btnLink: '/',
+        btnText: ['App Store', 'Google Play'],
+        btnLink: ['/', '/'],
+        btnIcons: ['fa fa-apple', 'fa fa-play'],
         imgUrl: './assets/imgs/bannerImage4.svg',
-        imgAlt: 'delivery boy set location'
+        imgAlt: 'delivery boy set location',
+        isrotate: true
     }
 ]
 

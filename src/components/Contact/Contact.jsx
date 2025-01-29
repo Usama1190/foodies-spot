@@ -5,6 +5,7 @@ import { contactData, contactInfo } from '../../utils/constant/contactData'
 const Contact = () => {
   const { title, description } = contactData;
   const { tel, email, location } = contactInfo;
+  const btnText = ['Contact us'];
   return (
     <section className={styles.cnwp}>
       <div className={styles.cncnwp}>
@@ -20,7 +21,7 @@ const Contact = () => {
           </ul>
         </div>
         <div>
-          <Button text={'Contact us'} />
+          <Button texts={btnText} />
         </div>
       </div>
     </section>

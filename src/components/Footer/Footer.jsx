@@ -33,7 +33,7 @@ const Footer = () => {
               {
                 icons?.map((item, index) => {
                   return (
-                    <span key={index} className={styles.ftics}>{item}</span>
+                    <span key={index} className={styles.ftics}><i className={`${item}`}></i></span>
                   )
                 })
               }

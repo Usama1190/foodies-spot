@@ -1,7 +1,15 @@
+import { useState } from "react";
 import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
 
 const Header = () => {
+  const [ toggle, setToggle ] = useState(true);
+  const btnText = ["Order now!"];
+
+  const handleClick = () => {
+    setToggle(!toggle);
+  }
+
   return (
     <div className={styles.hdwp}>
       <nav className={styles.navhd}>
@@ -23,7 +31,7 @@ const Header = () => {
             <li>
               <a href="#">Contact us</a>
             </li>
-            <li>icon</li>
+            <li><i className={toggle ? 'fa fa-toggle-on': 'fa fa-toggle-off'} onClick={handleClick}></i></li>
             <li className={styles.hct}>
               <div className={styles.hycc}></div>
               <div className={styles.hrcc}></div>
@@ -31,16 +39,16 @@ const Header = () => {
               <div className={styles.hgcc}></div>
             </li>
             <li>
-              <div>
-                <img src="" alt="flag" />
-                <span>English</span>
+              <div className={styles.hrlg}>
+                <img src="./assets/imgs/america-flag.png" alt="america flag" />
+                <span className={styles.helgt}>English</span>
               </div>
             </li>
           </ul>
         </div>
 
         <div>
-          <Button text="Order now!" />
+          <Button texts={btnText} />
         </div>
       </nav>
     </div>

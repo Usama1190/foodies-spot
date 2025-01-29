@@ -14,7 +14,7 @@
 }
 
 .hrcwp {
-    width: 49%;
+    width: 45%;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -30,16 +30,25 @@
 
 .hrdc {
     width: 75%;
-    color: var(--text-color-l);
+    color: var(--text-color-xl);
     margin: 0 0 32px;
     font-size: 15px;
 }
 
 .hriwp {
-    width: 51%;
+    width: 50%;
 }
 
 .hriwp img {
     width: 100%;
     /* border: 1px solid red; */
+}
+
+.her {
+    max-width: 968px;
+    padding: 96px 0 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 0 auto;
 }

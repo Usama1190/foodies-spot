@@ -1,11 +1,22 @@
-import './Button.module.css'
+import "./Button.module.css";
 
-const Button = ({ text }) => {
+const Button = ({ texts, icons }) => {
   return (
     <div>
-      <button>{ text }</button>
+      {texts?.map((item, index) => {
+        return (
+          <button key={index}>
+            {icons?.map((item, index) => {
+              <span key={index}>
+                <i className={`${item}`}></i>
+              </span>;
+            })}
+            {item}
+          </button>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

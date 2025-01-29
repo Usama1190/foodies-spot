@@ -16,7 +16,7 @@ const footerData = [
         links: ['Support', 'Questions', 'Customer Help'],
     },
     {
-        icons: ['fb', 'twi', 'insta']
+        icons: ['fa fa-facebook-official', 'fa fa-twitter', 'fa fa-instagram']
     }
 ]
 
