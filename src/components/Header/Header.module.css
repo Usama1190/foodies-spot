@@ -18,6 +18,36 @@ nav.navhd {
 .hdlk ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     min-width: 627px;
+}
+
+.hct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16px;
+    width: 76px;
+}
+
+.hct div {
+    width: 16px;
+    height: 16px;
+}
+
+.hycc {
+    background-color: var(--color-changer-yellow);
+}
+
+.hrcc {
+    background-color: var(--color-changer-red);
+}
+
+.hgcc {
+    background-color: var(--color-changer-green);
+}
+
+.hocc {
+    background-color: var(--color-changer-orange);
 }

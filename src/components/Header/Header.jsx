@@ -24,15 +24,17 @@ const Header = () => {
               <a href="#">Contact us</a>
             </li>
             <li>icon</li>
-            <li>
-              <span>Y</span>
-              <span>R</span>
-              <span>O</span>
-              <span>G</span>
+            <li className={styles.hct}>
+              <div className={styles.hycc}></div>
+              <div className={styles.hrcc}></div>
+              <div className={styles.hocc}></div>
+              <div className={styles.hgcc}></div>
             </li>
             <li>
-              <span>flag</span>
-              <span>English</span>
+              <div>
+                <img src="" alt="flag" />
+                <span>English</span>
+              </div>
             </li>
           </ul>
         </div>
