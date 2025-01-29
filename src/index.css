@@ -20,7 +20,9 @@ a {
   color: var(--text-color-l);
 }
 
-
+ul li {
+  list-style: none;
+}
 
 
 

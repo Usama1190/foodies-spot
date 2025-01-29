@@ -1,4 +1,29 @@
 .ftwp {
     width: 100%;
     padding: 96px 0 32px;
+    background-color: var(--secondary-color);
+}
+
+.ftiwp {
+    max-width: 968px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftcnwp {
+    border: 1px solid red;
+    height: 155px;
+}
+
+.ftcnwp h2 {
+    font-size: 18px;
+    margin: 0 0 12px;
+    color: var(--text-color-l);
+}
+
+.ftlan {
+    color: var(--text-color-l);
 }
