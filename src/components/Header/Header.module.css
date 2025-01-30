@@ -1,5 +1,6 @@
 .hdwp {
     width: 100%;
+    box-sizing: border-box;
     color: var(--text-color-l);
     font-weight: 600;
     font-size: 16px;
@@ -77,4 +78,22 @@ nav.navhd {
 .helgt {
     font-size: 11px;
     color: var(--text-color-xl);
+}
+
+@media (max-width: 1024px) {
+    nav.navhd {
+        margin: 0 24px;
+    }
+}
+
+@media (max-width: 960px) {
+    .hbw {
+        display: none;
+    }
+}
+
+@media (max-width: 766px) {
+    .hdlk {
+        display: none;
+    }
 }

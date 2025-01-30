@@ -48,7 +48,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <div>
+        <div className={styles.hbw}>
           <Button texts={btnText} />
         </div>
       </nav>
