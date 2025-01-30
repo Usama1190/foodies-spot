@@ -15,7 +15,7 @@ const Hero = ({ data }) => {
   } = data;
   return (
     <div className={styles.hrwp}>
-      <div className={isrotate ? `${styles.her}` : `${styles.hrciwp}`}>
+      <div className={isrotate ? `${styles.her} ${styles.hrciwp}` : `${styles.hrciwp}`}>
         <div className={styles.hrcwp}>
           <h1 className={styles.hrt}>{title}</h1>
           <p className={styles.hrdc}>{description}</p>
