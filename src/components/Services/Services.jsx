@@ -1,4 +1,4 @@
-import serviceCardData from "../../utils/constant/serviceCardData"
+import serviceCardData from "../../utils/constant/serviceCardData.js"
 import ServiceCard from "../common/ServiceCard/ServiceCard"
 import styles from './Service.module.css'
 

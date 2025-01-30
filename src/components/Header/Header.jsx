@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [ toggle, setToggle ] = useState(true);
@@ -20,16 +21,16 @@ const Header = () => {
         <div className={styles.hdlk}>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <NavLink to={'/'}>Home</NavLink>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink to={'/about'}>About</NavLink>
             </li>
             <li>
-              <a href="#">Services</a>
+              <NavLink to={'/services'}>Services</NavLink>
             </li>
             <li>
-              <a href="#">Contact us</a>
+              <NavLink to={'/contact-us'}>Contact us</NavLink>
             </li>
             <li><i className={toggle ? 'fa fa-toggle-on': 'fa fa-toggle-off'} onClick={handleClick}></i></li>
             <li className={styles.hct}>

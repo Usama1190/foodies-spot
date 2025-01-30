@@ -14,7 +14,7 @@ const Contact = () => {
           <p className={styles.cndes}>{ description }</p>
         </div>
         <div>
-          <ul>
+          <ul className={styles.consw}>
             <li>Telephone: <a href="#">{ tel }</a></li>
             <li>Email: <a href="#">{ email }</a></li>
             <li>Location: <a href="#">{ location }</a></li>

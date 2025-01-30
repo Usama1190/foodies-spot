@@ -1,25 +1,36 @@
-import Button from '../common/Button/Button';
-import styles from './Hero.module.css'
+import Button from "../common/Button/Button";
+import styles from "./Hero.module.css";
 
 const Hero = ({ data }) => {
-  const { title, description, btnText, btnLink , imgUrl, imgAlt, btnIcons, isrotate } = data;
+  const {
+    title,
+    description,
+    btnText,
+    btnLink,
+    imgUrl,
+    imgAlt,
+    btnIcons,
+    isrotate,
+    imgLaout,
+  } = data;
   return (
     <div className={styles.hrwp}>
-      <div className={isrotate ? `${styles.her}`: `${styles.hrciwp}`}>
+      <div className={isrotate ? `${styles.her}` : `${styles.hrciwp}`}>
         <div className={styles.hrcwp}>
           <h1 className={styles.hrt}>{title}</h1>
           <p className={styles.hrdc}>{description}</p>
-          {
-            btnText ? <Button texts={btnText} links={btnLink} icons={btnIcons} /> : null
-          }
-          
+          <div className={styles.hrbw}>
+            {btnText ? (
+              <Button texts={btnText} links={btnLink} icons={btnIcons} />
+            ) : null}
+          </div>
         </div>
         <div className={styles.hriwp}>
-          <img src={imgUrl} alt={imgAlt} />
+          <img src={imgUrl} alt={imgAlt} style={imgLaout} />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -6,8 +6,10 @@ const Button = ({ texts, icons }) => {
       {texts?.map((item, index) => {
         return (
           <button key={index}>
-            {icons && <i key={index} className={`${icons[index]}`}></i>}
-            {item}
+            <span className='hbs'>
+              {icons && <i key={index} className={`${icons[index]}`}></i>}
+              {item}
+            </span>
           </button>
         );
       })}

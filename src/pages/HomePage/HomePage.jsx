@@ -1,9 +1,9 @@
 import Contact from "../../components/Contact/Contact";
 import Hero from "../../components/Hero/Hero";
 import Services from "../../components/Services/Services";
-import heroData from "../../utils/constant/heroData";
+import heroData from "../../utils/constant/heroData.js";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
       {heroData.map((item, index) => {
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
