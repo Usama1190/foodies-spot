@@ -40,10 +40,10 @@
 }
 
 .hrbw {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    grid-gap: .5rem;
-    gap: .5rem;
+    /* width: 202px; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* border: 1px solid red; */
 }
 
 .hriwp {
@@ -116,5 +116,27 @@
     .hrt {
         width: 100%;
     }
+
+    .hrbw {
+        display: flex;
+        justify-content: center;
+    }
 }
 
+@media (max-width: 330px) {
+    .hrbw {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* border: 1px solid purple; */
+    }
+
+    .hriwp img {
+        /* border: 1px solid red; */
+        width: 100% !important;
+    }
+
+    .hrwp {
+        padding: 56px 0 16px;
+    }
+}

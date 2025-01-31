@@ -80,6 +80,32 @@ nav.navhd {
     color: var(--text-color-xl);
 }
 
+
+
+
+
+
+
+/* index.css ya Header.module.css */
+html.light {
+    background-color: white;
+    color: black;
+  }
+  
+  html.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Smooth Transition */
+  html {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  
+
+  
+
 @media (max-width: 1024px) {
     nav.navhd {
         margin: 0 24px;

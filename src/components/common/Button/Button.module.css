@@ -7,9 +7,29 @@ button {
     border: none;
     cursor: pointer;
     /* border: 1px solid red; */
+    margin: 0 0 0 12px;
 }
 
 i {
     margin: 0 10px 0 0;
     font-size: 1.45rem;
+}
+
+
+@media (max-width: 682px) {
+    button {
+        margin: 12px 0 0 0;
+    }
+}
+
+@media (max-width: 567px) {
+    button {
+        margin: 0 0 0 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    button {
+        margin: 12px 0 0 12px;
+    }
 }
