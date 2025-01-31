@@ -15,5 +15,20 @@
 .scwp {
     margin: 16px 0 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media (max-width: 967px) {
+    .scwp {
+        margin: 0 24px;
+        /* padding: 16px 0 0; */
+    }
+}
+
+@media (max-width: 967px) {
+    /* .scwp {
+        margin: 0 24px;
+        padding: 16px 0 0;
+    } */
 }

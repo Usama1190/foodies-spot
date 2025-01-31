@@ -29,7 +29,7 @@
 }
 
 .hrdc {
-    width: 75%;
+    width: 100%;
     color: var(--text-color-xl);
     margin: 0 0 32px;
     font-size: 15px;
@@ -48,6 +48,7 @@
 
 .hriwp {
     /* border: 1px solid red; */
+    width: 55%;
 }
 
 @media (max-width: 1024px) {
@@ -56,12 +57,13 @@
     }
 
     .hrcwp {
-        /* border: 1px solid red; */
+        /* border: 1px solid blue; */
+        width: 49%;
     }
 
     .hriwp {
-        /* border: 1px solid red; */
-        /* width: 55%; */
+        /* border: 1px solid blue; */
+        width: 49%;
     }
 
     .hrdc {
@@ -69,19 +71,24 @@
     }
 }
 
+@media (max-width: 767px) {
+    .hrwp {
+        padding: 72px 0 16px;
+    }
+
+    .hrciwp {
+        padding: 0;
+    }
+}
+
 @media (max-width: 576px) {
     .hrciwp {
         display: flex;
         flex-direction: column-reverse;
-        padding: 72px 0 16px;
     }
 
     .her {
         flex-direction: column;
-    }
-
-    .hrwp {
-        padding: 0;
     }
 
     .hrcwp {
@@ -91,6 +98,7 @@
 
     .hriwp {
         /* border: 1px solid red; */
+        width: 100%;
         display: flex;
         justify-content: center;
     }

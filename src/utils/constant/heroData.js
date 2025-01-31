@@ -6,7 +6,7 @@ const heroData = [
         btnLink: ['/'],
         imgUrl: './assets/imgs/bannerImage.svg',
         imgAlt: 'food delivery rider image',
-        imgLaout: { 'width': '33.75rem', 'height': '19.75rem' }
+        imgLaout: { 'width': '100%', 'height': '19.75rem' }
     },
     {
         title: 'Find Out A Little More About Us',
@@ -14,14 +14,14 @@ const heroData = [
         imgUrl: './assets/imgs/bannerImage2.svg',
         imgAlt: 'delivery boy on the door',
         isrotate: true,
-        imgLaout: { 'max-width': '29.375rem', 'max-height': '22.1875rem' }
+        imgLaout: { 'width': '100%', 'height': '22.1875rem' }
     },
     {
         title: 'Your Safety Is Important',
         description: 'When your order reaches you, we have the health safety protocols, so that you are protected from any disease. Watch the video of how the delivery is made.',
         imgUrl: './assets/imgs/bannerImage3.svg',
         imgAlt: 'delivery boy deliver order',
-        imgLaout: { 'max-width': '29.375rem', 'max-height': '20.8125rem' }
+        imgLaout: { 'width': '100%', 'height': '20.8125rem' }
     },
     {
         title: 'Watch Your Delivery At Any Time',
@@ -32,7 +32,7 @@ const heroData = [
         imgUrl: './assets/imgs/bannerImage4.svg',
         imgAlt: 'delivery boy set location',
         isrotate: true,
-        imgLaout: { 'max-width': '29.375rem', 'max-height': '24.125rem' }
+        imgLaout: { 'width': '100%', 'height': '24.125rem' }
     }
 ]
 

@@ -20,7 +20,7 @@ const Contact = () => {
             <li>Location: <a href="#">{ location }</a></li>
           </ul>
         </div>
-        <div>
+        <div className={styles.cbw}> 
           <Button texts={btnText} />
         </div>
       </div>
