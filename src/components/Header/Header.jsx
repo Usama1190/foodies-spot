@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
-// import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const btnText = ["Order now!"];
@@ -9,7 +8,6 @@ const Header = () => {
 
   function toggleOpen() {
     setOpen(!isOpen);
-    // console.log(isOpen);
   }
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -40,58 +38,38 @@ const Header = () => {
         >
           <ul>
             <li>
-              {/* <NavLink
-                to={"#home"}
-                className={({ isActive }) =>
-                  isActive ? `${styles.acl}` : null
-                }
+              <a
+                href="#home"
+                // onClick={homeActive}
+                // className={activeSection === "home" ? styles.acl : ""}
               >
-                Home
-              </NavLink> */}
-
-              <a href="#home" className={styles.acl}>
                 Home
               </a>
             </li>
             <li>
-              {/* <NavLink
-                to={"#about"}
-                className={({ isActive }) =>
-                  isActive ? `${styles.acl}` : null
-                }
+              <a
+                href="#about"
+                // onClick={aboutActive}
+                // className={activeSection === "about" ? styles.acl : ""}
               >
-                About
-              </NavLink> */}
-
-              <a href="#about" className={styles.acl}>
                 about
               </a>
             </li>
             <li>
-              {/* <NavLink
-                to={"#services"}
-                className={({ isActive }) =>
-                  isActive ? `${styles.acl}` : null
-                }
+              <a
+                href="#services"
+                // onClick={servicesActive}
+                // className={activeSection === "services" ? styles.acl : ""}
               >
-                Services
-              </NavLink> */}
-
-              <a href="#services" className={styles.acl}>
                 Services
               </a>
             </li>
             <li>
-              {/* <NavLink
-                to={"#contact-us"}
-                className={({ isActive }) =>
-                  isActive ? `${styles.acl}` : null
-                }
+              <a
+                href="#contact"
+                // onClick={contactActive}
+                // className={activeSection === "contact" ? styles.acl : ""}
               >
-                Contact us
-              </NavLink> */}
-
-              <a href="#contact-us" className={styles.acl}>
                 Contact us
               </a>
             </li>

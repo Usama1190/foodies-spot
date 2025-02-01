@@ -6,7 +6,8 @@ const heroData = [
         btnLink: ['/'],
         imgUrl: './assets/imgs/bannerImage.svg',
         imgAlt: 'food delivery rider image',
-        imgLaout: { 'width': '100%', 'height': '19.75rem' }
+        imgLaout: { 'width': '100%', 'height': '19.75rem' },
+        id: 'home'
     },
     {
         title: 'Find Out A Little More About Us',
@@ -14,7 +15,8 @@ const heroData = [
         imgUrl: './assets/imgs/bannerImage2.svg',
         imgAlt: 'delivery boy on the door',
         isrotate: true,
-        imgLaout: { 'width': '100%', 'height': '22.1875rem' }
+        imgLaout: { 'width': '100%', 'height': '22.1875rem' },
+        id: 'about'
     },
     {
         title: 'Your Safety Is Important',

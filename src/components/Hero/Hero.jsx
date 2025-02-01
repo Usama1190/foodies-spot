@@ -12,9 +12,13 @@ const Hero = ({ data }) => {
     btnIcons,
     isrotate,
     imgLaout,
+    id
   } = data;
+
+  console.log(id);
+  
   return (
-    <div id="hero" className={styles.hrwp}>
+    <div id={id} className={styles.hrwp}>
       <div
         className={
           isrotate ? `${styles.her} ${styles.hrciwp}` : `${styles.hrciwp}`

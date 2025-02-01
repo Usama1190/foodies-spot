@@ -7,7 +7,7 @@ const Contact = () => {
   const { tel, email, location } = contactInfo;
   const btnText = ['Contact us'];
   return (
-    <section id='contact-us' className={styles.cnwp}>
+    <section id='contact' className={styles.cnwp}>
       <div className={styles.cncnwp}>
         <div className={styles.cnhdes}>
           <h2 className={styles.cnt}>{ title }</h2>

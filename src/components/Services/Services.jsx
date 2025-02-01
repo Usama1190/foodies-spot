@@ -4,7 +4,7 @@ import styles from './Service.module.css'
 
 const Services = () => {
   return (
-    <div className={styles.swp}>
+    <div id="services" className={styles.swp}>
       <h2 className={styles.swph}>Some Services We Offer</h2>
 
       <div className={styles.scwp}>
