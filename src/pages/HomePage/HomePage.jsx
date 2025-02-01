@@ -5,7 +5,7 @@ import heroData from "../../utils/constant/heroData.js";
 
 const HomePage = () => {
   return (
-    <div>
+    <div id="home">
       {heroData.map((item, index) => {
         if (index === 2) {
           return (

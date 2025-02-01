@@ -14,7 +14,7 @@ const Hero = ({ data }) => {
     imgLaout,
   } = data;
   return (
-    <div className={styles.hrwp}>
+    <div id="hero" className={styles.hrwp}>
       <div
         className={
           isrotate ? `${styles.her} ${styles.hrciwp}` : `${styles.hrciwp}`

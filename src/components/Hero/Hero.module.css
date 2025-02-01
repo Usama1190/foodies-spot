@@ -105,7 +105,7 @@
 
     .hriwp img {
         /* border: 1px solid red; */
-        width: 60% !important;
+        width: 65% !important;
     }
 
     .hrdc {
@@ -115,11 +115,6 @@
 
     .hrt {
         width: 100%;
-    }
-
-    .hrbw {
-        display: flex;
-        justify-content: center;
     }
 }
 

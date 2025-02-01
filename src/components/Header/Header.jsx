@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const btnText = ["Order now!"];
+  const [isOpen, setOpen] = useState(false);
+
+  function toggleOpen() {
+    setOpen(!isOpen);
+    // console.log(isOpen);
+  }
+
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
@@ -23,19 +30,70 @@ const Header = () => {
           <p>Delivery</p>
         </div>
 
-        <div className={styles.hdlk}>
+        <div
+          className={
+            isOpen
+              ? `${styles.hdlk} ${styles.mbo}`
+              : `${styles.hdlk} ${styles.mbc}`
+          }
+          onClick={toggleOpen}
+        >
           <ul>
             <li>
-              <NavLink to={"/"}>Home</NavLink>
+              {/* <NavLink
+                to={"#home"}
+                className={({ isActive }) =>
+                  isActive ? `${styles.acl}` : null
+                }
+              >
+                Home
+              </NavLink> */}
+
+              <a href="#home" className={styles.acl}>
+                Home
+              </a>
             </li>
             <li>
-              <NavLink to={"/about"}>About</NavLink>
+              {/* <NavLink
+                to={"#about"}
+                className={({ isActive }) =>
+                  isActive ? `${styles.acl}` : null
+                }
+              >
+                About
+              </NavLink> */}
+
+              <a href="#about" className={styles.acl}>
+                about
+              </a>
             </li>
             <li>
-              <NavLink to={"/services"}>Services</NavLink>
+              {/* <NavLink
+                to={"#services"}
+                className={({ isActive }) =>
+                  isActive ? `${styles.acl}` : null
+                }
+              >
+                Services
+              </NavLink> */}
+
+              <a href="#services" className={styles.acl}>
+                Services
+              </a>
             </li>
             <li>
-              <NavLink to={"/contact-us"}>Contact us</NavLink>
+              {/* <NavLink
+                to={"#contact-us"}
+                className={({ isActive }) =>
+                  isActive ? `${styles.acl}` : null
+                }
+              >
+                Contact us
+              </NavLink> */}
+
+              <a href="#contact-us" className={styles.acl}>
+                Contact us
+              </a>
             </li>
             <li>
               <i
@@ -63,7 +121,15 @@ const Header = () => {
         <div className={styles.hbw}>
           <Button texts={btnText} />
         </div>
+
+        <div className={styles.hmb} onClick={toggleOpen}>
+          <i className="fa fa-th-large"></i>
+        </div>
       </nav>
+
+      <div className={styles.mu}>
+        <i className="fa fa-arrow-up"></i>
+      </div>
     </div>
   );
 };

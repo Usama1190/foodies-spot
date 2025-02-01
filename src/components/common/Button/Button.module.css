@@ -10,9 +10,16 @@ button {
     margin: 0 0 0 12px;
 }
 
-i {
+button i {
     margin: 0 10px 0 0;
-    font-size: 1.45rem;
+    font-size: 1.45rem !important;
+}
+
+.hbs {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
