@@ -121,48 +121,40 @@ html {
   color: var(--text-color-l);
 }
 
-
 .mu {
-    position: absolute;
-    top: 700px;
-    right: 60px;
-    z-index: 2;
-    background-color: var(--color-changer-yellow);
-    /* border: 1px solid red; */
-    border-radius: 4px;
-    text-align: center;
-    padding: 4px 6px;
-    cursor: pointer;
-    /* animation-name: example;
-  animation-duration: 6s;
-  animation-iteration-count: 1; */
-}
-
-::-webkit-scrollbar {
+  position: absolute;
+  top: 700px;
+  right: 60px;
+  z-index: 2;
+  background-color: var(--color-changer-yellow);
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 6px;
+  cursor: pointer;
   animation-name: example;
   animation-duration: 6s;
   animation-iteration-count: 1;
 }
 
+/* ::-webkit-scrollbar {
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+} */
+
 .mu i {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @keyframes example {
-  0%   {top:900px;}
-  100%  {top:700px;}
+  0% {
+    top: 900px;
+  }
+  100% {
+    top: 700px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
   nav.navhd {
