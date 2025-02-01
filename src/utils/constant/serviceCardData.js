@@ -5,7 +5,7 @@ const serviceCardData = [
         imgUrl: './assets/imgs/cardImage1.svg',
         imgAlt: 'order payment image',
         btnText: 'Learn more',
-        btnLink: '/'
+        btnLink: '#'
     },
     {
         title: 'Find Your Product',
@@ -13,7 +13,7 @@ const serviceCardData = [
         imgUrl: './assets/imgs/cardImage2.svg',
         imgAlt: 'digital product image',
         btnText: 'Learn more',
-        btnLink: '/'
+        btnLink: '#'
     },
     {
         title: 'Product Received',
@@ -21,7 +21,7 @@ const serviceCardData = [
         imgUrl: './assets/imgs/cardImage3.svg',
         imgAlt: 'digital product received',
         btnText: 'Learn more',
-        btnLink: '/'
+        btnLink: '#'
     },
 ]
 

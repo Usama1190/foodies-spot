@@ -40,7 +40,6 @@ const Header = () => {
             <li>
               <a
                 href="#home"
-                // onClick={homeActive}
                 // className={activeSection === "home" ? styles.acl : ""}
               >
                 Home
@@ -49,7 +48,6 @@ const Header = () => {
             <li>
               <a
                 href="#about"
-                // onClick={aboutActive}
                 // className={activeSection === "about" ? styles.acl : ""}
               >
                 about
@@ -58,7 +56,6 @@ const Header = () => {
             <li>
               <a
                 href="#services"
-                // onClick={servicesActive}
                 // className={activeSection === "services" ? styles.acl : ""}
               >
                 Services
@@ -67,7 +64,6 @@ const Header = () => {
             <li>
               <a
                 href="#contact"
-                // onClick={contactActive}
                 // className={activeSection === "contact" ? styles.acl : ""}
               >
                 Contact us
@@ -106,7 +102,7 @@ const Header = () => {
       </nav>
 
       <div className={styles.mu}>
-        <i className="fa fa-arrow-up"></i>
+        <a href="#"><i className="fa fa-arrow-up"></i></a>
       </div>
     </div>
   );

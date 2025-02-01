@@ -5,12 +5,14 @@ const Button = ({ texts, icons }) => {
     <div>
       {texts?.map((item, index) => {
         return (
-          <button key={index}>
-            <span className={styles.hbs}>
-              {icons && <i key={index} className={`${icons[index]}`}></i>}
-              {item}
-            </span>
-          </button>
+          <a href="#" key={index}>
+            <button>
+              <span className={styles.hbs}>
+                {icons && <i key={index} className={`${icons[index]}`}></i>}
+                {item}
+              </span>
+            </button>
+          </a>
         );
       })}
     </div>
