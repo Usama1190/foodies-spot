@@ -48,7 +48,7 @@ nav.navhd {
 }
 
 .hycc {
-  background-color: var(--color-changer-yellow);
+  /* background-color: var(--color-changer-yellow); */
 }
 
 .hrcc {
@@ -109,10 +109,6 @@ html {
   display: block !important;
 }
 
-.mbc {
-  /* display: none !important; */
-}
-
 .acl::after {
   content: "•";
   position: absolute;
@@ -122,39 +118,9 @@ html {
   color: var(--text-color-l);
 }
 
-.mu {
-  position: absolute;
-  top: 700px;
-  right: 60px;
-  z-index: 2;
-  background-color: var(--color-changer-yellow);
-  color: var(--heading-color);
-  border-radius: 4px;
-  text-align: center;
-  padding: 4px 6px;
-  cursor: pointer;
-  animation-name: example;
-  animation-duration: 6s;
-  animation-iteration-count: 1;
-}
-
-/* ::-webkit-scrollbar {
-  animation-name: example;
-  animation-duration: 6s;
-  animation-iteration-count: 1;
-} */
-
-.mu i {
-  font-size: 14px;
-}
-
-@keyframes example {
-  0% {
-    top: 900px;
-  }
-  100% {
-    top: 700px;
-  }
+.toggle {
+  color: var(--bg-color);
+  background-color: red;
 }
 
 @media (max-width: 1024px) {

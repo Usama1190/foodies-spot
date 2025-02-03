@@ -3,9 +3,14 @@ import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
 import translations from "../../locals/translations";
 import { LanguageContext } from "../../context/languageContext";
+import { useColor } from "../../context/colorContext";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+
+  const {setSelectedColor} = useColor();
+
+  const colors = ["#F5C83D", "#F5493D", "#F07642", "#69CC66"];
 
   const { language, toggleLanguage } = useContext(LanguageContext);
 
@@ -61,10 +66,15 @@ const Header = () => {
               ></i>
             </li>
             <li className={styles.hct}>
-              <div className={styles.hycc}></div>
-              <div className={styles.hrcc}></div>
-              <div className={styles.hocc}></div>
-              <div className={styles.hgcc}></div>
+              {colors.map((color, index) => {
+                return (
+                  <div
+                    key={index}
+                    style={{ backgroundColor: color }}
+                    onClick={() => setSelectedColor(color)}
+                  ></div>
+                );
+              })}
             </li>
             <li>
               <div className={styles.hrlg} onClick={toggleLanguage}>
@@ -102,12 +112,6 @@ const Header = () => {
           <i className="fa fa-th-large"></i>
         </div>
       </nav>
-
-      <div className={styles.mu}>
-        <a href="#">
-          <i className="fa fa-arrow-up"></i>
-        </a>
-      </div>
     </div>
   );
 };
