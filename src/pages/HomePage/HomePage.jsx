@@ -6,10 +6,13 @@ import Header from "../../components/Header/Header.jsx";
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../context/languageContext.jsx";
 import styles from "./Home.module.css";
+import { useColor } from "../../context/colorContext.jsx";
 
 const HomePage = () => {
   const { language } = useContext(LanguageContext);
   const data = heroData[language];
+
+  const {selectedColor} = useColor();
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,6 +36,7 @@ const HomePage = () => {
     <div id="home">
       <Header />
       <div
+      style={{backgroundColor: selectedColor?.darkColor}}
         className={`${styles.gtb} ${isVisible ? styles.show : ""}`}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >

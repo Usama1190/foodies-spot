@@ -10,7 +10,24 @@ const Header = () => {
 
   const {setSelectedColor} = useColor();
 
-  const colors = ["#F5C83D", "#F5493D", "#F07642", "#69CC66"];
+  const colors = [
+    {
+      darkColor: '#F5C83D',
+      lightColor: '#FAE39E'
+    },
+    {
+      darkColor: '#F5493D',
+      lightColor: '#FAA49E'
+    },
+    {
+      darkColor: '#F07642',
+      lightColor: '#F7BBA1'
+    },
+    {
+      darkColor: '#69CC66',
+      lightColor: '#B4E6B3'
+    }
+  ];
 
   const { language, toggleLanguage } = useContext(LanguageContext);
 
@@ -70,7 +87,7 @@ const Header = () => {
                 return (
                   <div
                     key={index}
-                    style={{ backgroundColor: color }}
+                    style={{ backgroundColor: color.darkColor }}
                     onClick={() => setSelectedColor(color)}
                   ></div>
                 );

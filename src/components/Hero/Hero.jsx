@@ -1,7 +1,10 @@
+import { useColor } from "../../context/colorContext";
 import Button from "../common/Button/Button";
 import styles from "./Hero.module.css";
 
 const Hero = ({ data }) => {
+
+  const { selectedColor } = useColor();
   const {
     title,
     description,

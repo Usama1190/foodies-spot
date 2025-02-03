@@ -2,14 +2,14 @@ import { useColor } from "../../../context/colorContext";
 import styles from "./Button.module.css";
 
 const Button = ({ texts, icons }) => {
-  const {seletedColor} = useColor();
+  const {selectedColor} = useColor();
 
   return (
     <div>
       {texts?.map((item, index) => {
         return (
           <a href="#" key={index}>
-            <button style={{backgroundColor: seletedColor}}>
+            <button style={{backgroundColor: selectedColor.darkColor}}>
               <span className={styles.hbs}>
                 {icons && <i key={index} className={`${icons[index]}`}></i>}
                 {item}

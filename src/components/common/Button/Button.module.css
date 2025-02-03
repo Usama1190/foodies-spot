@@ -3,10 +3,8 @@ button {
     border-radius: 3rem;
     font-weight: 600;
     color: #1A1A1A;
-    /* background-color: var(--primary-color); */
     border: none;
     cursor: pointer;
-    /* border: 1px solid red; */
     margin: 0 0 0 12px;
 }
 

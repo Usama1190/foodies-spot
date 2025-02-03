@@ -1,7 +1,6 @@
 .ftwp {
   width: 100%;
   padding: 96px 0 32px;
-  background-color: var(--secondary-color);
 }
 
 .ftiwp {
@@ -22,6 +21,11 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 12px;
+  color: #1A1A1A;
+}
+
+.ftcnwp a {
+  color: #282725;
 }
 
 .ftcnwp p {
@@ -38,7 +42,7 @@
   font-size: 1.45rem;
   line-height: 1;
   cursor: pointer;
-  color: var(--heading-color);
+  color: #1A1A1A;
 }
 
 @media (max-width: 1024px) {
