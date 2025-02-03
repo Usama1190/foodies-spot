@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Button from "../common/Button/Button";
 import styles from "./Header.module.css";
+import translations from "../../locals/translations";
+import { LanguageContext } from "../../context/languageContext";
 
 const Header = () => {
-  const btnText = ["Order now!"];
   const [isOpen, setOpen] = useState(false);
+
+  const { language, toggleLanguage } = useContext(LanguageContext);
 
   function toggleOpen() {
     setOpen(!isOpen);
@@ -25,7 +28,7 @@ const Header = () => {
     <div className={styles.hdwp}>
       <nav className={styles.navhd}>
         <div className={styles.hdlgwp}>
-          <p>Delivery</p>
+          <a href="#">{translations[language].delivery}</a>
         </div>
 
         <div
@@ -38,36 +41,16 @@ const Header = () => {
         >
           <ul>
             <li>
-              <a
-                href="#home"
-                // className={activeSection === "home" ? styles.acl : ""}
-              >
-                Home
-              </a>
+              <a href="#home">{translations[language].home}</a>
             </li>
             <li>
-              <a
-                href="#about"
-                // className={activeSection === "about" ? styles.acl : ""}
-              >
-                about
-              </a>
+              <a href="#about">{translations[language].about}</a>
             </li>
             <li>
-              <a
-                href="#services"
-                // className={activeSection === "services" ? styles.acl : ""}
-              >
-                Services
-              </a>
+              <a href="#services">{translations[language].services}</a>
             </li>
             <li>
-              <a
-                href="#contact"
-                // className={activeSection === "contact" ? styles.acl : ""}
-              >
-                Contact us
-              </a>
+              <a href="#contact">{translations[language].contact}</a>
             </li>
             <li>
               <i
@@ -84,16 +67,35 @@ const Header = () => {
               <div className={styles.hgcc}></div>
             </li>
             <li>
-              <div className={styles.hrlg}>
-                <img src="./assets/imgs/america-flag.png" alt="america flag" />
-                <span className={styles.helgt}>English</span>
+              <div className={styles.hrlg} onClick={toggleLanguage}>
+                {language === "en" ? (
+                  <>
+                    <img
+                      src="./assets/imgs/america-flag.png"
+                      alt="english flag"
+                    />
+                    <span className={styles.helgt}>English</span>
+                  </>
+                ) : (
+                  <>
+                    <img
+                      src="./assets/imgs/pakistan-flag.png"
+                      alt="urdu flag"
+                    />
+                    <span className={styles.helgt}>Urdu</span>
+                  </>
+                )}
               </div>
             </li>
           </ul>
         </div>
 
         <div className={styles.hbw}>
-          <Button texts={btnText} />
+          {language === "en" ? (
+            <Button texts={["Order now!"]} />
+          ) : (
+            <Button texts={["ابھی آرڈر کریں"]} />
+          )}
         </div>
 
         <div className={styles.hmb} onClick={toggleOpen}>
@@ -102,7 +104,9 @@ const Header = () => {
       </nav>
 
       <div className={styles.mu}>
-        <a href="#"><i className="fa fa-arrow-up"></i></a>
+        <a href="#">
+          <i className="fa fa-arrow-up"></i>
+        </a>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@
 .scdes {
     margin: 0 0 24px;
     font-size: 15px;
-    color: var(--text-color-l);
+    /* color: var(--para-color); */
 }
 
 @media (max-width: 967px) {

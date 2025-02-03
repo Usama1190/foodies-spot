@@ -1,11 +1,17 @@
 import styles from './Contact.module.css'
 import Button from "../common/Button/Button"
 import { contactData, contactInfo } from '../../utils/constant/contactData'
+import { useContext } from 'react'
+import { LanguageContext } from '../../context/languageContext'
 
 const Contact = () => {
-  const { title, description } = contactData;
-  const { tel, email, location } = contactInfo;
-  const btnText = ['Contact us'];
+  const { language } = useContext(LanguageContext);
+
+  const data = contactData[language];
+  const info = contactInfo[language]
+
+  const { title, description, btnText } = data;
+  const { tel, email, location } = info;
   return (
     <section id='contact' className={styles.cnwp}>
       <div className={styles.cncnwp}>
@@ -15,9 +21,9 @@ const Contact = () => {
         </div>
         <div>
           <ul className={styles.consw}>
-            <li>Telephone: <a href="#">{ tel }</a></li>
-            <li>Email: <a href="#">{ email }</a></li>
-            <li>Location: <a href="#">{ location }</a></li>
+            <li>{ tel }: <a href="#">123 - 456 - 789</a></li>
+            <li>{ email }: <a href="#">delivery@email.com</a></li>
+            <li>{ location }: <a href="#">Planet Earth</a></li>
           </ul>
         </div>
         <div className={styles.cbw}> 

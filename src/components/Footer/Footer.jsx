@@ -1,11 +1,16 @@
+import { useContext } from "react";
 import footerData from "../../utils/constant/footerData";
 import styles from "./Footer.module.css";
+import { LanguageContext } from "../../context/languageContext";
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext);
+  const data = footerData[language];
+
   return (
     <div className={styles.ftwp}>
       <div className={styles.ftiwp}>
-        {footerData.map((item, index) => {
+        {data.map((item, index) => {
           const { title, description, links, icons } = item;
           return (
             <div key={index} className={styles.ftcnwp}>

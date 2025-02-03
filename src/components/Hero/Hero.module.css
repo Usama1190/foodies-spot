@@ -25,12 +25,11 @@
   font-size: 32px;
   margin: 0 0 12px;
   width: 85%;
-  color: var(--text-color-d);
 }
 
 .hrdc {
   width: 100%;
-  color: var(--text-color-xl);
+  /* color: var(--text-color-xl); */
   margin: 0 0 32px;
   font-size: 15px;
 }

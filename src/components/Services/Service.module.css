@@ -4,7 +4,6 @@
     margin: 0 auto;
     text-align: center;
     padding: 96px 0 32px;
-    color: var(--text-color-l);
 }
 
 .swph {
@@ -27,8 +26,4 @@
 }
 
 @media (max-width: 967px) {
-    /* .scwp {
-        margin: 0 24px;
-        padding: 16px 0 0;
-    } */
 }

@@ -1,68 +1,64 @@
 .ftwp {
-    width: 100%;
-    padding: 96px 0 32px;
-    background-color: var(--secondary-color);
+  width: 100%;
+  padding: 96px 0 32px;
+  background-color: var(--secondary-color);
 }
 
 .ftiwp {
-    max-width: 968px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  max-width: 968px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .ftcnwp {
-    /* border: 1px solid red; */
-    height: 155px;
-    width: 17%;
+  height: 155px;
+  width: 17%;
 }
 
 .ftcnwp h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 12px;
-    color: var(--text-color-l);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px;
 }
 
 .ftcnwp p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .ftlan {
-    color: var(--text-color-l);
-    font-size: 13px;
-    margin: 0 0 10px;
+  font-size: 13px;
+  margin: 0 0 10px;
 }
 
 .ftics {
-    margin: 0 10px;
-    font-size: 1.45rem;
-    line-height: 1;
-    cursor: pointer;
+  margin: 0 10px;
+  font-size: 1.45rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--heading-color);
 }
 
-
 @media (max-width: 1024px) {
-    .ftiwp {
-        margin: 0 24px;
-    }
+  .ftiwp {
+    margin: 0 24px;
+  }
 }
 
 @media (max-width: 967px) {
-    .ftiwp div {
-        width: 49%;
-        height: 100%;
-        margin: 16px 0 0;
-    }
+  .ftiwp div {
+    width: 49%;
+    height: 100%;
+    margin: 16px 0 0;
+  }
 }
 
 @media (max-width: 576px) {
-    .ftiwp div {
-        width: 100%;
-        height: 100%;
-        margin: 16px 0 0;
-    }
+  .ftiwp div {
+    width: 100%;
+    height: 100%;
+    margin: 16px 0 0;
+  }
 }
