@@ -8,7 +8,7 @@ import { useColor } from "../../context/colorContext";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
-  const {setSelectedColor} = useColor();
+  const { selectedColor, setSelectedColor} = useColor();
 
   const colors = [
     {
@@ -76,6 +76,7 @@ const Header = () => {
             </li>
             <li>
               <i
+              style={{color: selectedColor.darkColor }}
                 className={
                   theme === "light" ? "fa fa-toggle-on" : "fa fa-toggle-off"
                 }
