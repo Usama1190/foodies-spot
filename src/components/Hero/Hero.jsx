@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useColor } from "../../context/colorContext";
 import Button from "../common/Button/Button";
 import styles from "./Hero.module.css";
@@ -36,8 +37,13 @@ const Hero = ({ data }) => {
           </div>
         </div>
         <div className={styles.hriwp}>
-        {/* <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"/> */}
-          <img src={imgUrl} alt={imgAlt} style={imgLaout} />
+          <object
+            type="image/svg+xml"
+            data={imgUrl}
+            id="heroSvg"
+          />
+
+            {/* <img src={imgUrl} alt={imgAlt} style={imgLaout} /> */}
         </div>
       </div>
     </div>

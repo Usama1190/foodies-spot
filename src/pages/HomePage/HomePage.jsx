@@ -1,41 +1,43 @@
-import Contact from "../../components/Contact/Contact";
-import Hero from "../../components/Hero/Hero";
-import Services from "../../components/Services/Services";
-import heroData from "../../utils/constant/heroData.js";
+// import Contact from "../../components/Contact/Contact";
+// import Hero from "../../components/Hero/Hero";
+// import Services from "../../components/Services/Services";
+// import heroData from "../../utils/constant/heroData.js";
 import Header from "../../components/Header/Header.jsx";
-import { useContext, useEffect, useState } from "react";
-import { LanguageContext } from "../../context/languageContext.jsx";
-import styles from "./Home.module.css";
-import { useColor } from "../../context/colorContext.jsx";
+// import { useContext, useEffect, useState } from "react";
+// import { LanguageContext } from "../../context/languageContext.jsx";
+// import styles from "./Home.module.css";
+// import { useColor } from "../../context/colorContext.jsx";
+import FirstImage from "../../components/Image/Image.jsx";
 
 const HomePage = () => {
-  const { language } = useContext(LanguageContext);
-  const data = heroData[language];
+  // const { language } = useContext(LanguageContext);
+  // const data = heroData[language];
 
-  const {selectedColor} = useColor();
+  // const {selectedColor} = useColor();
 
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (window.scrollY > 200) {
+  //     setIsVisible(true);
+  //   } else {
+  //     setIsVisible(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // });
 
   return (
     <div id="home">
       <Header />
-      <div
+      <FirstImage />
+      {/* <div
       style={{backgroundColor: selectedColor?.darkColor}}
         className={`${styles.gtb} ${isVisible ? styles.show : ""}`}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -56,7 +58,7 @@ const HomePage = () => {
           return <Hero key={index} data={item} />;
         }
       })}
-      <Contact />
+      <Contact /> */}
     </div>
   );
 };
