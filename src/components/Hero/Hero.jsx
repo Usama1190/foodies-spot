@@ -3,7 +3,6 @@ import Button from "../common/Button/Button";
 import styles from "./Hero.module.css";
 
 const Hero = ({ data }) => {
-
   const { selectedColor } = useColor();
   const {
     title,
@@ -15,11 +14,11 @@ const Hero = ({ data }) => {
     btnIcons,
     isrotate,
     imgLaout,
-    id
+    id,
   } = data;
 
   console.log(id);
-  
+
   return (
     <div id={id} className={styles.hrwp}>
       <div
@@ -37,6 +36,7 @@ const Hero = ({ data }) => {
           </div>
         </div>
         <div className={styles.hriwp}>
+        {/* <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"/> */}
           <img src={imgUrl} alt={imgAlt} style={imgLaout} />
         </div>
       </div>

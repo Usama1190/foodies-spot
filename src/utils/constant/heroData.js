@@ -1,6 +1,7 @@
 const heroData = {
   en: [
     {
+      id: "home",
       title: "Order Products Faster Easier",
       description:
         "Order your favorite foods at any time and we will deliver them right to where you are.",
@@ -9,9 +10,9 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage.svg",
       imgAlt: "food delivery rider image",
       imgLaout: { width: "100%", height: "19.75rem" },
-      id: "home",
     },
     {
+      id: "about",
       title: "Find Out A Little More About Us",
       description:
         "We are a company dedicated to the distribution of products by delivery to your home or to the place where you are, with the best quality of delivery.",
@@ -19,7 +20,6 @@ const heroData = {
       imgAlt: "delivery boy on the door",
       isrotate: true,
       imgLaout: { width: "100%", height: "22.1875rem" },
-      id: "about",
     },
     {
       title: "Your Safety Is Important",
@@ -44,6 +44,7 @@ const heroData = {
   ],
   ur: [
     {
+      id: "home",
       title: "مصنوعات کو تیزی سے اور آسانی سے آرڈر کریں",
       description:
         "کسی بھی وقت اپنے پسندیدہ کھانے کا آرڈر دیں اور ہم انہیں آپ کی جگہ پر پہنچائیں گے۔",
@@ -52,9 +53,9 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage.svg",
       imgAlt: "food delivery rider image",
       imgLaout: { width: "100%", height: "19.75rem" },
-      id: "home",
     },
     {
+      id: "about",
       title: "ہمارے بارے میں تھوڑا سا مزید جانیں۔",
       description:
         "ہم ایک ایسی کمپنی ہیں جو آپ کے گھر یا اس جگہ پر جہاں آپ ہیں، ترسیل کے بہترین معیار کے ساتھ مصنوعات کی تقسیم کے لیے وقف ہیں",
@@ -62,7 +63,6 @@ const heroData = {
       imgAlt: "delivery boy on the door",
       isrotate: true,
       imgLaout: { width: "100%", height: "22.1875rem" },
-      id: "about",
     },
     {
       title: "آپ کی حفاظت اہم ہے۔",
