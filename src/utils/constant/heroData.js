@@ -10,7 +10,7 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage.svg",
       imgAlt: "food delivery rider image",
       imgLaout: { width: "100%", height: "19.75rem" },
-      pd: [20, 34, 35, 36, 37, 38, 39, 42, 44, 46, 56, 64, 71, 75, 79, 101, 102, 111, 112, 113],
+      pd: [20, 33, 34, 35, 36, 37, 39, 40, 42, 44, 46, 56, 57, 64, 71, 75, 79, 85, 86, 87, 88, 101, 102, 109, 110, 112, 113, 114],
       pl: []
     },
     {
@@ -22,6 +22,8 @@ const heroData = {
       imgAlt: "delivery boy on the door",
       isrotate: true,
       imgLaout: { width: "100%", height: "22.1875rem" },
+      // pd: [26, 29, 32, 42, 43, 53, 64, 65, 75, 80, 85],
+      // pl: [1]
     },
     {
       title: "Your Safety Is Important",
@@ -30,6 +32,8 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage3.svg",
       imgAlt: "delivery boy deliver order",
       imgLaout: { width: "100%", height: "20.8125rem" },
+      // pd: [7, 10, 23, 24, 32, 33, 35, 36, 45, 46, 47, 52, 57, 58, 61, 67, 86, 88],
+      // pl: [1]
     },
     {
       title: "Watch Your Delivery At Any Time",
@@ -42,6 +46,8 @@ const heroData = {
       imgAlt: "delivery boy set location",
       isrotate: true,
       imgLaout: { width: "100%", height: "24.125rem" },
+      // pd: [16, 32, 33, 73, 105, 115, 116, 117],
+      // pl: [1, 29, 107]
     },
   ],
   ur: [
@@ -55,6 +61,8 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage.svg",
       imgAlt: "food delivery rider image",
       imgLaout: { width: "100%", height: "19.75rem" },
+      pd: [20, 33, 34, 35, 36, 37, 39, 40, 42, 44, 46, 56, 57, 64, 71, 75, 79, 85, 86, 87, 88, 101, 102, 109, 110, 112, 113, 114],
+      pl: []
     },
     {
       id: "about",
@@ -65,6 +73,8 @@ const heroData = {
       imgAlt: "delivery boy on the door",
       isrotate: true,
       imgLaout: { width: "100%", height: "22.1875rem" },
+      // pd: [26, 29, 32, 42, 43, 53, 64, 65, 75, 80, 85],
+      // pl: [1]
     },
     {
       title: "آپ کی حفاظت اہم ہے۔",
@@ -73,6 +83,8 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage3.svg",
       imgAlt: "delivery boy deliver order",
       imgLaout: { width: "100%", height: "20.8125rem" },
+      // pd: [7, 10, 23, 24, 32, 33, 35, 36, 45, 46, 47, 52, 57, 58, 61, 67, 86, 88],
+      // pl: [1]
     },
     {
       title: "کسی بھی وقت اپنی ڈیلیوری دیکھیں",
@@ -85,6 +97,8 @@ const heroData = {
       imgAlt: "delivery boy set location",
       isrotate: true,
       imgLaout: { width: "100%", height: "24.125rem" },
+      // pd: [16, 32, 33, 73, 105, 115, 116, 117],
+      // pl: [1, 29, 107]
     },
   ],
 };

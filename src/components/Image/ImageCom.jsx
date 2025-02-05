@@ -5,7 +5,7 @@ import { useColor } from "../../context/colorContext";
 
 const ImageCom = ({ svgUrl, pathDark, pathLightl }) => {
   const { selectedColor } = useColor();
-  // console.log(pathDark);
+  console.log(svgUrl);
   return (
     <>
       <BannerImage className="custom-svg" />
