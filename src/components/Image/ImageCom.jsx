@@ -5,6 +5,10 @@ import BannerImageTwo from "../../assets/imgs/bannerImage2.svg?react";
 import BannerImageThree from "../../assets/imgs/bannerImage3.svg?react";
 import BannerImageFour from "../../assets/imgs/bannerImage4.svg?react";
 
+// import SerImgOn from "../../assets/imgs/cdImg1.svg?react";
+// import SerImgTw from "../../assets/imgs/cdImg2.svg?react";
+// import SerImgTh from "../../assets/imgs/cdImg3.svg?react";
+
 import { useColor } from "../../context/colorContext";
 
 const ImageCom = ({ svgUrl, pathDark, pathLight }) => {
