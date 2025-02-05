@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", serif;
+  transition: all 0.3s ease-in-out;
   scrollbar-width: thin;
     scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
 }
