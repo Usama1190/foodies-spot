@@ -10,6 +10,8 @@ const heroData = {
       imgUrl: "./assets/imgs/bannerImage.svg",
       imgAlt: "food delivery rider image",
       imgLaout: { width: "100%", height: "19.75rem" },
+      pd: [20, 34, 35, 36, 37, 38, 39, 42, 44, 46, 56, 64, 71, 75, 79, 101, 102, 111, 112, 113],
+      pl: []
     },
     {
       id: "about",

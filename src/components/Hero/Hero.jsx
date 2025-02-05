@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useColor } from "../../context/colorContext";
 import Button from "../common/Button/Button";
 import styles from "./Hero.module.css";
+import ImageCom from "../Image/ImageCom";
 
 const Hero = ({ data }) => {
   const { selectedColor } = useColor();
@@ -16,6 +17,8 @@ const Hero = ({ data }) => {
     isrotate,
     imgLaout,
     id,
+    pd,
+    pl,
   } = data;
 
   console.log(id);
@@ -37,13 +40,7 @@ const Hero = ({ data }) => {
           </div>
         </div>
         <div className={styles.hriwp}>
-          <object
-            type="image/svg+xml"
-            data={imgUrl}
-            id="heroSvg"
-          />
-
-            {/* <img src={imgUrl} alt={imgAlt} style={imgLaout} /> */}
+          <ImageCom svgUrl={imgUrl} pathDark={pd} pathLight={pl} />
         </div>
       </div>
     </div>
